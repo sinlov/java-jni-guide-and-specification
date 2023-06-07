@@ -13,6 +13,15 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
+
+apply plugin: 'java'
+
+tasks.withType(JavaCompile) {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+    options.encoding = "UTF-8"
+}
+
 apply from: rootProject.file("gradle/jacoco/jacoco-simple.gradle")
 
 dependencies {
@@ -44,7 +53,10 @@ test {
 //                "**/com/sinlov/java/playground/*"
         ]
     }
+    systemProperty "java.library.path", file("${project(":hello").buildDir}/lib/main/debug").absolutePath
 }
+
+test.dependsOn  ':hello:linkDebug'
 
 //uploadArchives {
 //    repositories {

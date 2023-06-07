@@ -1,3 +1,4 @@
+[![gradle-java](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java.yml/badge.svg)](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java.yml)
 [![gradle-java-codecov](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java-codecov.yml/badge.svg)](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java-codecov.yml)
 [![codecov](https://codecov.io/gh/sinlov/java-jni-guide-and-specification/branch/main/graph/badge.svg)](https://codecov.io/gh/sinlov/java-jni-guide-and-specification)
 
