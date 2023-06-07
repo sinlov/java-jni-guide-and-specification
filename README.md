@@ -1,3 +1,6 @@
+[![gradle-java-codecov](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java-codecov.yml/badge.svg)](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java-codecov.yml)
+[![codecov](https://codecov.io/gh/sinlov/java-jni-guide-and-specification/branch/main/graph/badge.svg)](https://codecov.io/gh/sinlov/java-jni-guide-and-specification)
+
 ## introduce
 
 `The Java Native Interface — Programmer’s Guide and Specification`
@@ -6,7 +9,7 @@
 
 ## source
 
-- [https://github.com/sinlov/java-jni-guide-and-specification](https://github.com/sinlov/java-jni-guide-and-specification) 
+- [https://github.com/sinlov/java-jni-guide-and-specification](https://github.com/sinlov/java-jni-guide-and-specification)
 
 ## env
 

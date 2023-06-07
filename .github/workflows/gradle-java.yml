@@ -22,7 +22,7 @@ jobs:
             gradlew_exec: ./gradlew
             gradlew_exec_permission: on
           - os: windows-latest
-            gradlew_exec: gradlew.bat
+            gradlew_exec: .\gradlew
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
