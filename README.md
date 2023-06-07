@@ -1,3 +1,13 @@
+## introduce
+
+`The Java Native Interface — Programmer’s Guide and Specification`
+
+- code example
+
+## source
+
+- [https://github.com/sinlov/java-jni-guide-and-specification](https://github.com/sinlov/java-jni-guide-and-specification) 
+
 ## env
 
 | item   | version | can use version                                                                                                                                 |
@@ -18,5 +28,5 @@ make help
 make init
 
 # test
-make guideTest
+make guideTestInfo
 ```
