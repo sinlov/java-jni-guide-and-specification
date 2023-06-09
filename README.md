@@ -1,5 +1,5 @@
-[![gradle-java](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java.yml/badge.svg)](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java.yml)
-[![gradle-java-codecov](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java-codecov.yml/badge.svg)](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-java-codecov.yml)
+[![gradle-matrix](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-matrix.yml/badge.svg)](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-matrix.yml)
+[![gradle-codecov](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-codecov.yml/badge.svg)](https://github.com/sinlov/java-jni-guide-and-specification/actions/workflows/gradle-codecov.yml)
 [![codecov](https://codecov.io/gh/sinlov/java-jni-guide-and-specification/branch/main/graph/badge.svg)](https://codecov.io/gh/sinlov/java-jni-guide-and-specification)
 
 ## introduce

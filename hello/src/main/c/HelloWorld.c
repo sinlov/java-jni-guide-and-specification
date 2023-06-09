@@ -8,7 +8,7 @@ extern "C" {
  * Method:    print
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_sinlov_java_jniguide_hello_HelloWorld_print
+JNIEXPORT void JNICALL Java_com_sinlov_java_jni_1guide_101_hello_HelloWorld_print
   (JNIEnv * env, jobject obj) {
   printf("Hello World!\n");
 }

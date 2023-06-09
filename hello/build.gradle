@@ -7,6 +7,8 @@ import org.gradle.internal.jvm.Jvm
 apply plugin: 'cpp-library'
 apply plugin: 'cpp-unit-test'
 
+group MAVEN_GROUP
+
 version VERSION_NAME
 
 library {

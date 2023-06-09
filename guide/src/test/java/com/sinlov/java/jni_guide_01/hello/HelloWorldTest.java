@@ -1,8 +1,6 @@
-package com.sinlov.java.jniguide.hello;
+package com.sinlov.java.jni_guide_01.hello;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class HelloWorldTest {
 
