@@ -38,6 +38,14 @@ dependencies {
     implementation base_depend["com.github.javafaker:javafaker"]
     // compileOnly base_depend.commons_cli
 }
+def libProjects = [
+        project(":hello"),
+        project(":datatype"),
+]
+
+test.dependsOn ':hello:linkDebug'
+test.dependsOn ':datatype:linkDebug'
+
 test {
     // https://docs.gradle.org/4.6/release-notes.html
     useJUnitPlatform()
@@ -50,19 +58,19 @@ test {
 //        enabled = false
         includeNoLocationClasses = false
         excludes = [
-//                "**/com/sinlov/java/playground/*"
+//                "**/com/sinlov/java/common/*"
         ]
     }
-    systemProperty "java.library.path", file("${project(":hello").buildDir}/lib/main/debug").absolutePath
-    systemProperty "java.library.path", file("${project(":datatype").buildDir}/lib/main/debug").absolutePath
+
+    def libSeparator = (System.properties['os.name'] as String).toLowerCase().contains('windows') ? ";" : ":"
+    def libPathDebugSb = new StringBuilder()
+    for (final def libProject in libProjects) {
+        libPathDebugSb
+                .append(file("${libProject.buildDir}/lib/main/debug").absolutePath)
+                .append(libSeparator)
+    }
+    if (libProjects.size() > 1) {
+        libPathDebugSb.setLength(libPathDebugSb.length() - 1)
+    }
+    systemProperty "java.library.path", libPathDebugSb.toString()
 }
-
-test.dependsOn  ':hello:linkDebug'
-
-//uploadArchives {
-//    repositories {
-//        flatDir {
-//            dirs 'build/repos'
-//        }
-//    }
-//}
