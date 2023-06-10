@@ -54,6 +54,7 @@ test {
         ]
     }
     systemProperty "java.library.path", file("${project(":hello").buildDir}/lib/main/debug").absolutePath
+    systemProperty "java.library.path", file("${project(":datatype").buildDir}/lib/main/debug").absolutePath
 }
 
 test.dependsOn  ':hello:linkDebug'

@@ -10,3 +10,4 @@
 // rootProject.name = 'java-jni-guide-Specification'
 include 'guide'
 include 'hello'
+include 'datatype'
